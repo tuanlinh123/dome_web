@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    min-height: 100vh;
+    background: #c2e59c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #64b3f4, #c2e59c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+section .container_Back {
+    margin: 20px 20px;
+}
+
+section .btn_Back {
+    outline: none;
+    background-color: #90e6e6;
+    /* margin: 20px 20px; */
+    padding: 8px;
+    font-weight: 400;
+    color: rgb(32, 30, 30);
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+section .container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    backdrop-filter: #fff;
+    box-shadow: 0 15px 50px rgb(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+section .container .user {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+section .container .user .imgBx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #ff0;
+    transition: 0.5s;
+}
+
+section .container .user .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .container .user .formBx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
+section .container .user .formBx form h2 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+form {
+    width: 100%;
+}
+
+.form-group {
+    display: initial;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.form-control {
+    position: relative;
+    width: 100%;
+    padding: 14px 16px;
+    background: #f5f5f5;
+    border: 0.5px solid #b3b3b3;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: none;
+    margin: 8px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.form-control:hover {
+    border-color: #1dbfaf;
+}
+
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+
+.form-message {
+    font-size: 12px;
+    /* padding: 4px 0 0; */
+    text-align: left;
+}
+
+.form-submit {
+    outline: none;
+    background-color: #1dbfaf;
+    margin-top: 12px;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: #1ac7b6;
+}
+
+.spacer {
+    margin-top: 36px;
+}
+
+.form__text {
+    text-align: center;
+    padding: 15px;
+}
+
+.form__link {
+    color: rgb(16, 176, 240);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.form__link:hover {
+    text-decoration: underline;
+}
+
+
+/*----------------------------------------*/
+
+section .container .signupBx {
+    pointer-events: none;
+}
+
+section .container.active .signupBx {
+    pointer-events: initial;
+}
+
+section .container .signupBx .formBx {
+    left: 200%;
+}
+
+section .container.active .signupBx .formBx {
+    left: 0;
+}
+
+section .container .signupBx .imgBx {
+    left: -200%;
+}
+
+section .container.active .signupBx .imgBx {
+    left: 0;
+}
+
+
+/*-------------*/
+
+section .container .signinBx .formBx {
+    left: 0;
+}
+
+section .container.active .signinBx .formBx {
+    left: 200%;
+}
+
+section .container .signinBx .imgBx {
+    left: 0;
+}
+
+section .container.active .signinBx .imgBx {
+    left: 200%;
+}

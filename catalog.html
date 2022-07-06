@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LT Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Sarabun:wght@200&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/search.css" />
+    <link rel="stylesheet" href="./css/footer.css"/>
+    <link rel="stylesheet" href="./css/slide.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./css/style.css"/> -->
+    <script src="https://kit.fontawesome.com/0536cffa86.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="menu">
+        <div class="container_menu">
+            <a href="./index.html" class="menu__home">home</a>
+            <a href="./catalog.html" class="menu__home" id="home12">CATALOG</a>
+        </div>
+        <div class="icons">
+            <a onclick="showcart()"><i class="fas fa-shopping-cart"><span id="countsp" >0</span></i></a>
+            <a href="./login/x/login.html" id="login-btn"><i class="fas fa-user"></i><a>
+        </div>
+        <div class="showcart" id="showcart">
+            
+            <table >
+                <thead>
+                    <th>STT</th>
+                    <th>Hình ảnh</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Đơn giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                    <th>Xóa</th>
+                </thead>
+    
+                <tbody id="showmycart">
+            
+                </tbody>
+                <!-- <footer>
+                    <th>
+                        <div id="sumCart"></div>
+                    </th>
+                </footer> -->
+            </table>
+        </div>
+    </header>
+    <div class="backgroud__header">
+        <div class="container__header">
+        <div class="logo">
+            <span class="text0">L</span>
+            <span class="text0">T</span>
+
+            <span class="space">&nbsp</span>
+            <span class="text1">Store</span>
+
+        </div>
+        <div class="embrace">
+            <div class="search-container">
+                 <input type="text" name="q" id="text-search" placeholder=" ">
+                 <button class="icon" id="btnsearch">
+                    <div id="search"><i class="fas fa-search" id="search-btn"></i></div> 
+                </button> 
+            </div>
+        </div>
+    </div>
+    </div>
+   
+
+    <section class="body_product">
+        <div class="container">
+            <div class="macbook">
+                
+            <div class="title1">THE LATEST</div>
+            <div class="title" id="macBook"><h3> LAPTOP OF LT </h3></div>
+            <div class="show_product"></div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-product"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer-distributed">
+        <div class="footer1">
+            <div class="footer-left">
+                <h3>MindX<span>Store</span></h3>
+
+                <p class="footer-links">
+                    <a href="#">Home</a> |
+                    <a href="#">About</a> |
+                    <a href="#">Contact</a> |
+                    <a href="#">Blog</a>
+                </p>
+
+                <p class="footer-company-name">Copyright © 2021 <strong>JavaScript</strong> All rights reserved</p>
+            </div>
+
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Ngã tư Sở</span> Thanh Xuân
+                    </p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+865650710</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="https://mail.google.com/mail/u/0/">xyz@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About the store</span>
+                    <strong>MindX Store</strong> is a our team's product created from HTML - CSS - JavaScript.
+                </p>
+                <div class="footer-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/cart.js"></script>
+    <!-- <script src="./js/cart.js"></script> -->
+
+</body>
+</html>

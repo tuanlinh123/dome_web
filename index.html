@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LT Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Sarabun:wght@200&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/slide.css" />
+    <link rel="stylesheet" href="./css/footer.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script src="https://kit.fontawesome.com/0536cffa86.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="menu">
+        <div class="container">
+            <a class="menu__home" id="home12">home</a>
+            <a href="./catalog.html" class="menu__home" >CATALOG</a>
+            <a href="#macBook" class="menu__home">LAPTOP MACBOOK</a>
+            <a href="#asus"class="menu__home">LAPTOP ASUS</a>
+            <a href="#HP" class="menu__home">LAPTOP HP</a>
+        </div>
+        <div class="icons">
+           <a onclick="showcart()"><i class="fas fa-shopping-cart"><span id="countsp" >0</span></i></a>
+           <a href="login/index.html"><i class="fas fa-user" id="login-btn"></i></a>
+           <i id="logout-btn" class="fas fa-sign-out-alt btn_hidden"></i>
+        </div>
+    </div>
+    <div class="showcart" id="showcart">
+        
+        <table >
+            <thead>
+                <th>STT</th>
+                <th>Hình ảnh</th>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+                <th>Xóa</th>
+            </thead>
+
+            <tbody id="showmycart">
+        
+            </tbody>
+            <!-- <footer>
+                <th>
+                    <div id="sumCart"></div>
+                </th>
+            </footer> -->
+        </table>
+    </div>
+    </header>
+    <div class="backgroud__header">
+        <div class="logo">
+            <span class="text0">L</span>
+            <span class="text0">T</span>
+            &nbsp;&nbsp;&nbsp;
+            <span class="text1">S</span>
+            <span class="text1">t</span>
+            <span class="text1">o</span>
+            <span class="text1">r</span>
+            <span class="text1">e</span>
+        </div>
+        <div class="embrace">
+            <div class="search-container">
+                <input type="text" name="q" id="text-search" placeholder=" ">
+                <button class="icon" id="btnsearch">
+                    <div><i class="fas fa-search" id="search-btn"></i></div>
+                </button>
+            </div>
+
+            <!-- <div class="free-ship">
+                Free Shipping On Orders $50+</div> -->
+
+        </div>
+    </div>
+
+    <div class="slider" onclick="changeImage()">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+
+            <div class="slide first">
+                <img src="./images/slide1.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./images/slide2.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./images/slide3.png" alt="">
+            </div>
+            <!-- slide images end -->
+            <!-- automatic navigation start -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+             <!-- automatic navigation end -->
+        </div>
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+    </div>
+    <!-- silder end -->
+    <div class="body_2">
+        <!--review-->
+   <section class="body_product1">
+       <div class="product_review">
+           <div class="review_pic">
+               <a> <img src="./uploads/asus3.jpg"></a>
+           </div>
+           <div class="review_text">
+             <h3>Sản phẩm bán chạy nhất</h3></>
+                 <h1>Asus TUF Gaming FX706HC i5 </h1>
+                 <ul>
+                     <li>Con chip Intel Core i5 11400H </li>
+                     <li>Cấu trúc 6 nhân 12 luồng </li>
+                     <li>RAM 8 GB loại DDR4 2 khe (1 khe 8 GB + 1 khe rời)</li>
+                     <li>Tốc độ Bus RAM là 3200 MHz</li>
+                     <li>Card đồ họa rời NVIDIA GeForce RTX3050 4 GB  1545 MHz đến 1750 MHz</li>
+                 </ul>
+                <!-- <div class="text1">&ensp;Laptop Asus TUF Gaming FX706HC i5 là chiếc laptop gaming phù hợp với mọi đối tượng người dùng, máy có cấu hình mạnh, thiết kế linh động, âm thanh và hình ảnh sống động, chân thực.</div>-->
+                 <div class="button">
+                    <a onclick="themvaogiohang(this)">Add</a>
+               </div>
+           </div>
+       </div>
+   </section>
+   <!--end review-->
+   <!--sảm phẩm-->
+   <section class="body_product">
+       <div class="container">
+           <div class="macbook">
+               
+           <div class="title1">THE LATEST</div>
+           <div class="title" id="macBook"><h3> LAPTOP MACBOOK </h3></div>
+           <div class="show_product">
+               <div class="card">
+                   <div class="items">
+                       <div class="image">
+                         <a href="./detail.html?=1"> <img src="./uploads/mb5.jpg" alt=""></a> 
+                       </div>
+                       <div class="text">
+                           <h3>Laptop MACBOOK PRO</h3>
+                           <p>20.000.000 đ</p>
+                           <input type="number" min="1" max="15" value="1">
+                       </div>
+                      <div class="button">
+                        <a onclick="themvaogiohang(this)">Add</a>
+                      </div>
+                   </div>
+               </div>
+               <div class="card">
+                   <div class="items">
+                       <div class="image">
+                        <a href="./detail.html?=2"> <img src="./uploads/mb4.jpg" alt=""></a>
+                       </div>
+                       <div class="text">
+                           <h3>Laptop MACBOOK AIR </h3>
+                           <p>22.000.000 đ</p>
+                           <input type="number" min="1" max="15" value="1">
+                       </div>
+                      <div class="button">
+                        <a onclick="themvaogiohang(this)">Add</a>
+                      </div>
+                   </div>
+               </div>
+               <div class="card">
+                   <div class="items">
+                       <div class="image">
+                        <a href="./detail.html?=3"> <img src="./uploads/mb3.jpg" alt=""></a>
+                       </div>
+                       <div class="text">
+                           <h3>Laptop MACBOOK PRO</h3>
+                           <p>24.000.000 đ</p>
+                           <input type="number" min="1" max="15" value="1">
+                       </div>
+                      <div class="button">
+                        <a onclick="themvaogiohang(this)">Add</a>
+                      </div>
+                   </div>
+               </div>
+               <div class="card">
+                   <div class="items">
+                       <div class="image">
+                        <a href="./detail.html?=4">   <img src="./uploads/mb2.jpg" alt=""></a>
+                       </div>
+                       <div class="text">
+                           <h3>Laptop RENA MACBOOK </h3>
+                           <p>24.000.000 đ</p>
+                           <input type="number" min="1" max="15" value="1">
+
+                       </div>
+                      <div class="button">
+                        <a onclick="themvaogiohang(this)">Add</a>
+
+                      </div>
+                   </div>
+               </div>
+           </div>
+       
+ <!-- laptop asus  ---------------  -->
+ <div class="asus">
+   <div class="title1">THE LATEST</div>
+   <div class="title" id="asus"><h3>Laptop ASUS</h3></div>
+   <div class="show_product">
+       <div class="card">
+           <div class="items">
+               <div class="image">
+                <a href="./detail.html?=5">  <img src="./uploads/asus4.jpg" alt=""></a>
+               </div>
+               <div class="text">
+                   <h3>ASUS Vivobook </h3>
+                   <p>19.000.000 đ</p>
+                   <input type="number" min="1" max="15" value="1">
+               </div>
+              <div class="button">
+                <a onclick="themvaogiohang(this)">Add</a>
+              </div>
+           </div>
+       </div>
+       <div class="card">
+           <div class="items">
+               <div class="image">
+                <a href="./detail.html?=6"> <img src="./uploads/asus2.jpg" alt=""></a>  
+               </div>
+               <div class="text">
+                   <h3>ASUS ExpertBook </h3>
+                   <p>20.000.000 đ</p>
+                   <input type="number" min="1" max="15" value="1">
+               </div>
+              <div class="button">
+                <a onclick="themvaogiohang(this)">Add</a>
+              </div>
+           </div>
+       </div>
+       <div class="card">
+           <div class="items">
+               <div class="image">
+                <a href="./detail.html?=7"> <img src="./uploads/asus3.jpg" alt=""></a>  
+               </div>
+               <div class="text">
+                   <h3>ASUS TUF Gaming </h3>
+                   <p>20.000.000 đ</p>
+                   <input type="number" min="1" max="15" value="1">
+               </div>
+              <div class="button">
+                <a onclick="themvaogiohang(this)">Add</a>
+              </div>
+           </div>
+       </div>
+       <div class="card">
+           <div class="items">
+               <div class="image">
+                <a href="./detail.html?=8"> <img src="./uploads/asus4.jpg" alt=""></a>
+               </div>
+               <div class="text">
+                   <h3>ASUS ROG</h3>
+                   <p>20.000.000 đ</p>
+                   <input type="number" min="1" max="15" value="1">
+               </div>
+              <div class="button">
+                <a onclick="themvaogiohang(this)">Add</a>
+              </div>
+           </div>
+       </div>
+  </div>
+</div>
+<!-- laptop hp --------   -->
+      <div class="hp">
+       <div class="title1">THE LATEST</div>
+       <div class="title" id="HP"><h3>Laptop HP</h3></div>
+       <section class="show_product">
+           <div class="card">
+               <div class="items">
+                   <div class="image">
+                    <a href="./detail.html?=9"> <img src="./uploads/hp3.jpg" alt=""></a>
+                   </div>
+                   <div class="text">
+                       <h3> HP Pavilion </h3>
+                       <p>20.000.000 đ</p>
+                   <input type="number" min="1" max="15" value="1">
+
+                   </div>
+                  <div class="button">
+                <a onclick="themvaogiohang(this)">Add</a>
+                  </div>
+               </div>
+           </div>
+           <div class="card">
+               <div class="items">
+                   <div class="image">
+                    <a href="./detail.html?=10"> <img src="./uploads/hp3.jpg" alt=""></a>
+                   </div>
+                   <div class="text">
+                       <h3> HP Envy </h3>
+                       <p>20.000.000 đ</p>
+                   <input type="number" min="1" max="15" value="1">
+
+                   </div>
+                  <div class="button">
+                    <a onclick="themvaogiohang(this)">Add</a>
+                  </div>
+               </div>
+           </div>
+           <div class="card">
+               <div class="items">
+                   <div class="image">
+                    <a href="./detail.html?=11"> <img src="./uploads/hp3.jpg" alt=""></a>
+                   </div>
+                   <div class="text">
+                       <h3>HP Spectre </h3>
+                       <p>20.000.000 đ</p>
+                   <input type="number" min="1" max="15" value="1">
+
+                   </div>
+                  <div class="button">
+                    <a onclick="themvaogiohang(this)">Add</a>
+                  </div>
+               </div>
+           </div>
+           <div class="card">
+               <div class="items">
+                   <div class="image">
+                    <a href="./detail.html?=12"> <img src="./uploads/hp3.jpg" alt=""></a>
+                   </div>
+                   <div class="text">
+                       <h3>HP EliteBook </h3>
+                       <p>20.000.000 đ</p>
+                   <input type="number" min="1" max="15" value="1">
+
+                   </div>
+                  <div class="button">
+                    <a onclick="themvaogiohang(this)">Add</a>
+                  </div>
+               </div>
+           </div>
+      </div>
+   </section>
+   <!--awesome-->
+   <section>
+       <div class="awesomeF">
+           <div class="title1">Meet Our Team</div>
+           <div class="title"><h3>About Us</h3></div>
+          <div class="pic">
+           <img src="https://i.pinimg.com/564x/d2/b5/ed/d2b5ede0b32e497bbb12fa9dc5048edd.jpg" alt="">
+           <img src="https://i.pinimg.com/564x/03/05/bb/0305bb555455e73c9b6dd55401add7af.jpg" alt="">
+           <img src="https://i.pinimg.com/564x/79/86/9e/79869e8600422cedbed4addc0688368e.jpg" alt="">
+           <img src="https://i.pinimg.com/564x/39/03/9a/39039a5fa7295a8b257e5e86bf8985cd.jpg" alt="">
+          </div>
+          <div class="button"><a href="./in.html">Xem thêm</a></div>
+       </div>
+   </section>
+   <!--and awesome-->
+     <!--customer review-->
+   <section class="customer-review">
+    <div div class="page-width">
+         <div class="customer-review-header">
+            <div class="title1">The Products</div>
+            <div class="title"><h3>Customer Review </h3></div>
+         </div>
+        
+       <div class="customer-review-body">
+            <div class="content-1">
+                <div class="content-1-padding">
+                    <div class="user">Customer</div>
+                    <div class="user-description">                        
+                        There are many variations of lorem ipsum available, but the have suffered alteration in some form by humour.”Lorem Ipsum is simply dummy text of the printing and typesetting industry.                        
+                      </div>
+                    <div class="user-img"><img src="https://cdn.shopify.com/s/files/1/0301/7274/1770/files/testimonialimage_80x80.png?v=1610085371"></div>
+                    <div class="user-name">Bill Blinton</div>
+                    <div class="user-job">Web Designer</div>
+                </div>
+                <div class="content-1-padding">
+                    <div class="user">Customer</div>
+                    <div class="user-description">                        
+                        There are many variations of lorem ipsum available, but the have suffered alteration in some form by humour.”Lorem Ipsum is simply dummy text of the printing and typesetting industry.                        
+                      </div>
+                    <div class="user-img"><img src="https://cdn.shopify.com/s/files/1/0301/7274/1770/files/testimonialimage_80x80.png?v=1610085371"></div>
+                    <div class="user-name">Bill Blinton</div>
+                    <div class="user-job">Web Designer</div>
+                </div>
+            </div>
+       </div>
+    </div>
+</section>
+   </div>
+  
+    <!-- footer -->
+    <footer class="footer-distributed">
+        <div class="footer1">
+            <div class="footer-left">
+                <h3>LT<span>Store</span></h3>
+    
+                <p class="footer-links">
+                    <a href="#">Home</a> |
+                    <a href="#">About</a> |
+                    <a href="#">Contact</a> |
+                    <a href="#">Blog</a>
+                </p>
+    
+                <p class="footer-company-name">Copyright © 2021 <strong>JavaScript</strong> All rights reserved</p>
+            </div>
+    
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Ngã tư Sở</span> Thanh Xuân
+                    </p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+865650710</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="https://mail.google.com/mail/u/0/">xyz@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About the store</span>
+                    <strong>LT Store</strong> is a our team's product created from HTML - CSS - JavaScript.
+                </p>
+                <div class="footer-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- footer -->
+    <script src="./js/index.js"></script>
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById('radio'+ counter).checked = true;
+        counter++;
+        if(counter > 3){
+            counter =1;
+        }
+    },4000);
+    </script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/log.js"></script>
+
+</body>
+
+</html>
